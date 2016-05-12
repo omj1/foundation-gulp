@@ -5,16 +5,15 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/app-full.min.css">
   <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
 </head>
 <body>
   <!--HEADER-->
   <div class="small-12 columns wrapper-header">
 
-    <div class="row">
       <div class="top-bar-left">
-        <a href="index.html"><img src="img/logo.png" alt="" class="margin-top-2 float-left"></a>
+        <img src="img/logo.png" alt="" class="margin-top-2 float-left">
       </div>
       <div class="top-bar-right">
         <nav role="navigation" class="float-right">
@@ -25,17 +24,15 @@
             <li><a href="#">Produkty</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
-          <a class="toggle-menu float-right" href="#menu"><i class="fi-list"></i></a>
+          <a class="toggle-menu float-left" href="#menu"><i class="fi-list"></i></a>
         </nav>
       </div>
-    </div>
 
-    <div class="row">
       <div class="small-12 large-8 columns wrapper-slogan">
         <h1>tworzymy nowoczesne</h1>
-        <h2>strony i&nbsp;aplikacje internetowe</h2>
+        <h2>strony i aplikacje internetowe</h2>
       </div>
-      <div class="small-12 large-4 columns hide-for-small-only">
+      <div class="small-12 large-4 columns hide-for-small-only" style="position:absolute;top:150px;right:150px;z-index:1010;">
         <form action="" class="form-header">
           <div class="small-12 columns input-group text-center">
             <div style="position:relative">
@@ -53,14 +50,30 @@
           </div>
         </form>
       </div>
-
-      <nav class="orbit-bullets float-center bottom">
+      <div class="orbit" style="position:relative; height:100%; width:100%" role="region" aria-label="Favorite Space Pictures" data-orbit  data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <ul class="orbit-container" style="position:absolute;height:100%;width:100%;z-index:999">
+            <li class="orbit-slide is-active" style="position:absolute; height:100%; z-index:9999;height:100%">
+                <div style="position:absolute;height:100%;width:100%;z-index:999;background-image:url(img/slide-01.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; ">
+                </div>
+            </li>
+            <li class="orbit-slide" style="position:absolute; height:100%; z-index:9999;height:100%">
+                <div style="position:absolute;height:100%;width:100%;z-index:999;background-image:url(img/slide-02.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; ">
+                </div>
+            </li>
+          </ul>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"></button>
+            <button data-slide="1"></button><br>
+            <a href="#section1" class="smoothScroll"><i class="fi-arrow-down icon-down bounce"></i></a>
+          </nav>
+      </div>
+      <!-- <nav class="orbit-bullets float-center bottom">
         <button class="is-active" data-slide="0"></button>
         <button data-slide="1"></button><br>
         <a href="#section1" class="smoothScroll"><i class="fi-arrow-down icon-down bounce"></i></a>
-      </nav>
-    </div>
+      </nav> -->
   </div>
+
   <!--KONIEC HEADER-->
 
   <!--SEKCJA 1-->

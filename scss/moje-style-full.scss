@@ -5,7 +5,7 @@
 
 // naglowek
 .wrapper-header {
-  background-image: url(../img/slide-01.jpg);
+  // background-image: url(../img/slide-01.jpg);
   position: relative;
   height: 100%;
   h1 {
@@ -20,10 +20,27 @@
     font-weight: 700;
     color: $white;
   }
-  .slogan {
+  .wrapper-slogan {
+    position:absolute;
+    z-index:1010;
+  }
+  .orbit {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    z-index:90
+  }
+  .orbit-bullets {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+  }
+  .orbit-slide {
+    position:absolute;
   }
   .orbit-bullets button.is-active {
     background-color: $white;
@@ -33,9 +50,32 @@
     border:1px solid $white;
   }
 }
+.top-bar-left {
+  position:absolute;
+  top:3rem;
+  left:7rem;
+  z-index:1010;
+}
+.top-bar-right {
+  padding-top:3rem;
+  padding-right:7rem;
+  z-index:1010;
+}
 @media screen and (max-width: 39.9375em) {
+  .top-bar-left {
+    position:absolute;
+    top:30px;
+    left:0rem;
+    z-index:1010;
+  }
+  .top-bar-right {
+    padding-top:1.5rem;
+    padding-right:0rem;
+    z-index:1010;
+  }
   .wrapper-slogan {
-    padding-top:5rem;
+    top: 15rem;
+    left:1rem;
     h1 {
       font-size: 2.2rem;
       line-height: 2rem;
@@ -50,19 +90,22 @@
 /* Medium and up */
 @media screen and (min-width: 40em) {
   .wrapper-slogan {
-    padding-top:7rem;
+    top:7rem;
+    left: 1rem;
   }
 }
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .wrapper-slogan {
-    padding-top:10rem;
+    top:10rem;
+    left: 3rem;
   }
 }
 /* Large and up */
 @media screen and (min-width: 64em) {
   .wrapper-slogan {
-    padding-top:15rem;
+    top:25rem;
+    left: 7rem;
   }
 }
 /* Large only */
