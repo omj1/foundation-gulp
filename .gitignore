@@ -16,7 +16,6 @@ local.properties
 .settings/
 .loadpath
 node_modules/
-bower_components/
 
 # External tool builders
 .externalToolBuilders/
