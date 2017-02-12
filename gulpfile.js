@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var useref = require('gulp-useref');
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
@@ -20,4 +21,10 @@ gulp.task('sass', function() {
 
 gulp.task('default', ['sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
+});
+
+gulp.task('useref', function(){
+  return gulp.src('*.html')
+    .pipe(useref())
+    .pipe(gulp.dest('dist'));
 });
