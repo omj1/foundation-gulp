@@ -9,6 +9,7 @@
   position: relative;
   height: 100%;
   h1 {
+    padding-top: 2rem;
     font-size: 3.7rem;
     color: $white;
     line-height: 2rem;
@@ -58,9 +59,9 @@
     height:100%;
     width:100%;
     z-index:999;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
   .orbit-bullets button.is-active {
     background-color: $white;
@@ -68,6 +69,12 @@
   .orbit-bullets button {
     background: transparent;
     border:1px solid $white;
+  }
+  .wrapper-form {
+    position:absolute;
+    top:150px;
+    right:150px;
+    z-index:1010;
   }
 }
 .top-bar-left {
@@ -81,6 +88,7 @@
   padding-right:7rem;
   z-index:1010;
 }
+
 @media screen and (max-width: 39.9375em) {
   .top-bar-left {
     position:absolute;
@@ -95,7 +103,7 @@
   }
   .wrapper-slogan {
     top: 15rem;
-    left:1rem;
+    left:0rem;
     h1 {
       font-size: 2.2rem;
       line-height: 2rem;
@@ -103,7 +111,7 @@
   }
   .top-bar-left img {
     width: 80%;
-    padding-left:1rem;
+    padding-left:2rem;
   }
 }
 
@@ -111,21 +119,37 @@
 @media screen and (min-width: 40em) {
   .wrapper-slogan {
     top:7rem;
-    left: 1rem;
+    left: 2rem;
   }
+
 }
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .wrapper-slogan {
     top:10rem;
-    left: 3rem;
+    left: 1rem;
+  }
+  .top-bar-left {
+    position:absolute;
+    top:30px;
+    left:1rem;
+    z-index:1010;
+  }
+  .top-bar-right {
+    padding-top:1.5rem;
+    padding-right:2rem;
+    z-index:1010;
+  }
+  .top-bar-left img {
+    width: 80%;
+    padding-left:2rem;
   }
 }
 /* Large and up */
 @media screen and (min-width: 64em) {
   .wrapper-slogan {
-    top:25rem;
-    left: 7rem;
+    top:27rem;
+    left: 1rem;
   }
 }
 /* Large only */
@@ -134,8 +158,7 @@
 }
 
 .form-header {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-right: 2rem;
 }
 .form-header span {
   color: $white;
@@ -506,3 +529,7 @@
     padding-top: 3rem;
     font-weight: $global-weight-bold;
   }
+.wrapper-header {
+  padding-right: 0;
+  padding-left: 0;
+}
