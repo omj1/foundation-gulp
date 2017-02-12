@@ -196,16 +196,16 @@
   position: relative;
 }
 .box1:hover:before {
-   content:"";
-   position: absolute;
-   right: 100%;
-   top: 50%;
-   transform: translateY(-50%);
-   width: 0;
-   height: 0;
-   border-top: 53px solid transparent;
-   border-right: 56px solid $white;
-   border-bottom: 53px solid transparent;
+  content:"";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 53px solid transparent;
+  border-right: 56px solid $white;
+  border-bottom: 53px solid transparent;
 }
 @media screen and (max-width: 39.9375em) {
   .box1:hover:before {
@@ -309,10 +309,10 @@
 }
 @media screen and (max-width: 39.9375em) {
   .toggle-menu {
-  font-size: 2.5rem;
-  top: 1rem;
-  right: 1.3rem;
-}
+    font-size: 2.5rem;
+    top: 1rem;
+    right: 1.3rem;
+  }
 }
 
 .toggle-menu:hover {
